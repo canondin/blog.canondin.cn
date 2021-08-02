@@ -11,7 +11,8 @@ go:
 
 install:
   # 安装最新的hugo
-  - wget https://github.com/gohugoio/hugo/releases/download/v0.86.1/hugo_0.86.1_Linux-64bit.deb  - sudo dpkg -i hugo*.deb
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.86.1/hugo_0.86.1_Linux-64bit.deb  
+  - sudo dpkg -i hugo_0.86.1_Linux-64bit.deb
   # 安装主题
   - git clone https://github.com/luizdepra/hugo-coder.git
 
