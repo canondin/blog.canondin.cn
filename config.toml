@@ -1,4 +1,4 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Canon.Din技术"
+title = "Canon.Din技术 v"
 theme = "hugo-coder"
