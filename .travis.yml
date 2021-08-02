@@ -20,6 +20,9 @@ script:
   # 运行hugo命令
   - hugo
 
+notifications:
+  email: false
+  
 after_script:
   # 部署
   - cd ./public
