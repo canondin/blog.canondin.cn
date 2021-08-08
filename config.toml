@@ -13,8 +13,14 @@ pygmentscodefencesguesssyntax = true
 
 FootnoteReturnLinkContents = "↑"
 
-disqusShortname = "utterances"
 
+ # AMP 相关
+ amp = true
+ # "amp-ad",
+ ampElements = ["amp-analytics"]
+ themeColor = "#000000"
+#  adsensePublisher = "ca-pub-1886683614725279"
+ googleAnalytics = "UA-112242993-2"
 [params]
     author = "CanonDin"
     info1 = "📚 学而时习之~"
@@ -23,6 +29,8 @@ disqusShortname = "utterances"
     description = "Study + Craft + Invest = CanonDin"
     keywords = "技术,生活"
     avatarurl = "images/favicon-16x16.png"
+
+    dateFormat = "2006-01-02"
 
     twitter = "abel___d_"
     github = "canondin"
@@ -35,9 +43,10 @@ disqusShortname = "utterances"
     hideFooter = false
     hidecredits = false
     hidecopyright = false
-    since = 2019
+    since = 2020
 
     enableTwemoji = true
+    enableGitInfo = true
 
     colorScheme = "auto"
     hidecolorschemetoggle = false
@@ -51,10 +60,13 @@ custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
   tag = "tags"
   author = "authors"
 
-[params.utterances]
+# disqusShortname = "utteranc"
+[params.utteranc]
     repo = "canondin/blogUtterances"
     issue-term = "pathname"
-    theme = "github-light"
+    label = "blog"
+    theme = "preferred-color-scheme"
+#     theme = "github-light"
 
 # Social links
 [[params.social]]
@@ -98,14 +110,18 @@ custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
                 weight = 2
                 url = "/about/"
             [[languages.zh-cn.menu.main]]
-                name = "学习"
-                weight = 3
-                url  = "/self/"
-            [[languages.zh-cn.menu.main]]
                 name = "技术"
+                weight = 3
+                url  = "/learn/"
+            [[languages.zh-cn.menu.main]]
+                name = "生活"
                 weight = 4
-                url  = "/series/"
+                url  = "/life/"
             [[languages.zh-cn.menu.main]]
                 name = "Tags"
                 weight = 5
                 url  = "/tags/"
+            [[languages.zh-cn.menu.main]]
+                name = "作者"
+                weight = 6
+                url  = "/authors/"

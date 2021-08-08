@@ -1,7 +1,12 @@
 ---
 title: "如何优雅的导入Python项目中依赖的包？"
-date: 2021-08-03T00:17:09+08:00
-draft: true
+date: 2021-08-03
+author: ["小鱿鱼🌼"]
+draft: false
+tags: ["Mac","Python"]
+keywords: "Mac、Python"
+series: ["自我提升"]
+isCJKLanguage: true
 ---
 
 > [官方文档](https://docs.python.org/zh-cn/3/tutorial/venv.html)

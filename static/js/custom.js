@@ -13,7 +13,7 @@ function set_home_page_all_views(hit) {
 }
 
 function set_home_page_site_run_days() {
-    var dateStart = new Date("2019-12-17");
+    var dateStart = new Date("2021-01-01");
     var dateEnd = new Date();
     var difValue = (dateEnd - dateStart) / (1000 * 60 * 60 * 24);
     document.getElementById("site-run-days").textContent = Math.ceil(difValue);
