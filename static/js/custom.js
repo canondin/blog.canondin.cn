@@ -19,7 +19,7 @@ function set_home_page_site_run_days() {
     document.getElementById("site-run-days").textContent = Math.ceil(difValue);
 }
 
-let allPageViewsAPI = "https://api.bmpi.dev/page-views/bmpi-dev-all-page-views/";
+let allPageViewsAPI = "https://api.bmpi.dev/page-views/canondin-cn-all-page-views/";
 let singlePageViewsAPI = "https://api.bmpi.dev/page-views/bmpi.dev" + window.location.pathname;
 
 function get_post_views(url, callback) {
@@ -47,7 +47,10 @@ function main() {
     }
 }
 
-main();
+// 统计 pv,uv 改成 busuanzi
+// main();
+//统计网站运行天数
+set_home_page_site_run_days();
 
 // remove dashboard iframe on mobile
 

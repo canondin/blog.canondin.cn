@@ -17,10 +17,11 @@ FootnoteReturnLinkContents = "↑"
  # AMP 相关
  amp = true
  # "amp-ad",
- ampElements = ["amp-analytics"]
+ ampElements = ["amp-ad","amp-analytics"]
  themeColor = "#000000"
-#  adsensePublisher = "ca-pub-1886683614725279"
+ adsensePublisher = "ca-pub-7726330621747741"
  googleAnalytics = "UA-112242993-2"
+
 [params]
     author = "CanonDin"
     info1 = "📚 学而时习之~"
@@ -50,6 +51,12 @@ FootnoteReturnLinkContents = "↑"
 
     colorScheme = "auto"
     hidecolorschemetoggle = false
+
+    # busuanzi 统计 pv uv
+    busuanzi = true
+    busuanzi_site_offset = 0
+    # 其他统计 pv uv 方式,暂时保留
+#     other_pv_uv = true
 
 custom_css = ["/css/main.css"]
 custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]

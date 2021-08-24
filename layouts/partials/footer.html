@@ -24,6 +24,20 @@
 <!--    👉-->
 <!--    <a href= {{ relLangURL "series" }} style="color: #519A73;">Series</a>-->
 <!--  </div>-->
+  {{ if isset .Site.Params "busuanzi" }}
+    <section class="container">
+        <div class="busuanzi">
+            <div class="busuanzi__item">
+                <span class="busuanzi__item--label">网站总 PV: </span>
+                <span id="busuanzi_value_site_pv"></span>
+            </div>
+            <div class="busuanzi__item">
+                <span class="busuanzi__item--label">网站总 UV: </span>
+                <span id="busuanzi_value_site_uv"></span>
+            </div>
+        </div>
+    </section>
+  {{ end }}
   <section class="container">
     {{ with .Site.Params.footercontent | safeHTML }}
       <p>{{.}}</p>
@@ -38,4 +52,9 @@
       [<a href="{{ .Site.Params.commit }}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]
     {{ end }}
   </section>
+    <section class="container">
+        <div >
+            网站运行: <span id="site-run-days"></span> 天
+        </div>
+    </section>
 </footer>

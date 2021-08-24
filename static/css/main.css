@@ -258,3 +258,50 @@ fontawesome minify
     display: flex;
     flex-flow: wrap;
 }
+.busuanzi {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    width: 250px;
+    margin: auto;
+}
+
+.busuanzi__item {
+    padding: .125rem;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1
+}
+
+.busuanzi__item--label {
+    font-size: 12.8px;
+    padding: .125rem 0;
+    font-family: lxgwwenkai-regular,JetBrainsMono-Regular;
+    font-style: italic
+}
+
+.busuanzi__item--number {
+    font-size: 16.8px;
+    font-weight: 700
+}
+
+#busuanzi_value_page_pv {
+    margin: 0 .1rem 0 .15rem
+}
