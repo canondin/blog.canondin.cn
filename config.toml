@@ -5,22 +5,36 @@ theme = "hugo-coder"
 languagecode = "zh-cn"
 defaultcontentlanguage = "zh-cn"
 
+# seo?
+# enableRobotsTXT = true
+# canonifyURLs = true
+
+enableGitInfo = true
+enableEmoji = true
+
 paginate = 20
 
 pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
+pluralizelisttitles = false
 
 FootnoteReturnLinkContents = "↑"
+[markup.goldmark.renderer]
+    unsafe= true
 
+[outputs]
+  page     = ["HTML", "AMP"]
+  home     = ["HTML", "RSS"]
+  section  = ["HTML"]
+  taxonomyTerm = ["HTML"]
+  taxonomy = ["HTML"]
 
- # AMP 相关
- amp = true
- # "amp-ad",
- ampElements = ["amp-ad","amp-analytics"]
- themeColor = "#000000"
- adsensePublisher = "ca-pub-7726330621747741"
- googleAnalytics = "UA-112242993-2"
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
 
 [params]
     author = "CanonDin"
@@ -44,13 +58,16 @@ FootnoteReturnLinkContents = "↑"
     hideFooter = false
     hidecredits = false
     hidecopyright = false
-    since = 2020
 
-    enableTwemoji = true
-    enableGitInfo = true
+    series = true
+    since = 2021
+    rtl = false
 
     colorScheme = "auto"
     hidecolorschemetoggle = false
+
+    # Series see also post count
+    maxSeeAlsoItems = 5
 
     # busuanzi 统计 pv uv
     busuanzi = true
@@ -58,21 +75,17 @@ FootnoteReturnLinkContents = "↑"
     # 其他统计 pv uv 方式,暂时保留
 #     other_pv_uv = true
 
-custom_css = ["/css/main.css"]
-custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
+    math = true
+    custom_css = ["/css/main.css"]
+    custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
 
-[outputs]
-  page     = ["HTML", "AMP"]
-  home     = ["HTML", "RSS"]
-  section  = ["HTML"]
-  taxonomyTerm = ["HTML"]
-  taxonomy = ["HTML"]
-
-[taxonomies]
-  category = "categories"
-  series = "series"
-  tag = "tags"
-  author = "authors"
+     # AMP 相关
+     amp = true
+     # "amp-ad",
+     ampElements = ["amp-ad","amp-analytics"]
+     themeColor = "#000000"
+     adsensePublisher = "ca-pub-7726330621747741"
+     googleAnalytics = "UA-112242993-2"
 
 # disqusShortname = "utteranc"
 [params.utteranc]
