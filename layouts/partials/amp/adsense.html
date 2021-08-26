@@ -1,29 +1,32 @@
-{{ if isset $.Site.Params "adsensepublisher" }}
+<!--{{ if isset $.Site.Params "adsensepublisher" }}-->
 
-{{ with .Params }}
-    {{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
-    <amp-ad type="adsense"
-            {{ with .width }}width="{{ . }}"{{ end }}
-    {{ with .height }}height="{{ . }}"{{ end }}
-    {{ with .layout }}layout="{{ . }}"{{ end }}
-    data-ad-client="{{ $.Site.Params.adsensePublisher }}"
-    {{ with .slot }}data-ad-slot="{{ . }}"{{ end }}>
-    </amp-ad>
-    {{ with .sticky }}</amp-sticky-ad>{{ end }}
-{{ end }}
+<!--{{ with .Params }}-->
+<!--    {{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}-->
+<!--    <amp-ad type="adsense"-->
+<!--            {{ with .width }}width="{{ . }}"{{ end }}-->
+<!--    {{ with .height }}height="{{ . }}"{{ end }}-->
+<!--    {{ with .layout }}layout="{{ . }}"{{ end }}-->
+<!--    data-ad-client="{{ $.Site.Params.adsensePublisher }}"-->
+<!--    {{ with .slot }}data-ad-slot="{{ . }}"{{ end }}>-->
+<!--    </amp-ad>-->
+<!--    {{ with .sticky }}</amp-sticky-ad>{{ end }}-->
+<!--{{ end }}-->
 
-{{ else }}
-{{ if isset . "context" }}
-{{ $publisher := .context.Site.Params.adsensePublisher }}
-{{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}
-    <amp-ad type="adsense"
-            {{ with .width }}width="{{ . }}"{{ end }}
-    {{ with .height }}height="{{ . }}"{{ end }}
-    {{ with .layout }}layout="{{ . }}"{{ end }}
-    data-ad-client="{{ $publisher }}"
-    {{ with .slot }}data-ad-slot="{{ . }}"{{ end }}>
-    </amp-ad>
-    {{ with .sticky }}</amp-sticky-ad>{{ end }}
-{{ end }}
+<!--{{ else }}-->
+<!--{{ if isset . "context" }}-->
+<!--{{ $publisher := .context.Site.Params.adsensePublisher }}-->
+<!--{{ with .sticky }}<amp-sticky-ad layout="nodisplay">{{ end }}-->
+<!--    <amp-ad type="adsense"-->
+<!--            {{ with .width }}width="{{ . }}"{{ end }}-->
+<!--    {{ with .height }}height="{{ . }}"{{ end }}-->
+<!--    {{ with .layout }}layout="{{ . }}"{{ end }}-->
+<!--    data-ad-client="{{ $publisher }}"-->
+<!--    {{ with .slot }}data-ad-slot="{{ . }}"{{ end }}>-->
+<!--    </amp-ad>-->
+<!--    {{ with .sticky }}</amp-sticky-ad>{{ end }}-->
+<!--{{ end }}-->
 
-{{ end }}
+<!--{{ end }}-->
+<section>
+    <script data-ad-client="ca-pub-7726330621747741" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</section>

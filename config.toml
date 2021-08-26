@@ -148,7 +148,7 @@ FootnoteReturnLinkContents = "↑"
                 name = "Tags"
                 weight = 5
                 url  = "/tags/"
-            [[languages.zh-cn.menu.main]]
-                name = "作者"
-                weight = 6
-                url  = "/authors/"
+#             [[languages.zh-cn.menu.main]]
+#                 name = "作者"
+#                 weight = 6
+#                 url  = "/authors/"
