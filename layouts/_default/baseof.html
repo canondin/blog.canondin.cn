@@ -29,26 +29,27 @@
   {{ end }}
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@abel___d_">
-  <meta name="twitter:creator" content="@abel___d_">
-  <meta name="twitter:title" content="{{ .Title }}"/>
-  <meta name="twitter:description" content="{{ .Description }}"/>
-  {{ if .Params.og_image }}
-  <meta property="twitter:image" content="{{ .Params.og_image }}" />
-  {{ else }}
-  <meta name="twitter:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.og_image }}">
-  {{ end }}
+<!--  <meta name="twitter:card" content="summary_large_image"/>-->
+<!--  <meta name="twitter:site" content="@abel___d_">-->
+<!--  <meta name="twitter:creator" content="@abel___d_">-->
+<!--  <meta name="twitter:title" content="{{ .Title }}"/>-->
+<!--  <meta name="twitter:description" content="{{ .Description }}"/>-->
+<!--  {{ if .Params.og_image }}-->
+<!--  <meta property="twitter:image" content="{{ .Params.og_image }}" />-->
+<!--  {{ else }}-->
+<!--  <meta name="twitter:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.og_image }}">-->
+<!--  {{ end }}-->
 
   <!-- Open Graph -->
-  {{ template "_internal/opengraph.html" . }}
-  {{ if .Params.og_image }}
-  <meta property="og:image" content="{{ .Params.og_image }}" />
-  {{ else }}
-  <meta name="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.og_image }}">
-  {{ end }}
+<!--  {{ template "_internal/opengraph.html" . }}-->
+<!--  {{ if .Params.og_image }}-->
+<!--  <meta property="og:image" content="{{ .Params.og_image }}" />-->
+<!--  {{ else }}-->
+<!--  <meta name="og:image" content="{{ .Site.BaseURL }}/{{ .Site.Params.og_image }}">-->
+<!--  {{ end }}-->
 
-  {{ partial "schema.html" . }}
+<!--  {{ partial "schema.html" . }}-->
+      {{ partial "busuanzi.html" . }}
 
   {{ if .Permalink }}
   <base href="{{ .Permalink }}">
