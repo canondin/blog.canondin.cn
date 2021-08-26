@@ -19,7 +19,6 @@ python3 -m venv test_venv
 
 ## 激活虚拟环境(**Mac 环境**)
 
-{{< ad_embed_post >}}
 
 ```bash
 source test_venv/bin/activate
