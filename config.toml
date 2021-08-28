@@ -11,6 +11,9 @@ defaultcontentlanguage = "zh-cn"
 
 enableGitInfo = true
 enableEmoji = true
+# make .Summary and .WordCount behave correctly for CJK languages
+# 中文、日文、韩文、越南文
+hasCJKLanguage = true
 
 paginate = 20
 
@@ -25,7 +28,7 @@ FootnoteReturnLinkContents = "↑"
 
 [outputs]
   page     = ["HTML", "AMP"]
-  home     = ["HTML", "RSS"]
+  home     = ["HTML", "RSS", "JSON"]
   section  = ["HTML"]
   taxonomyTerm = ["HTML"]
   taxonomy = ["HTML"]
@@ -46,6 +49,8 @@ FootnoteReturnLinkContents = "↑"
     avatarurl = "images/favicon-16x16.png"
 
     dateFormat = "2006-01-02"
+    # 隐藏 hugo & coder
+    hideCredits = true
 
     twitter = "abel___d_"
     github = "canondin"
@@ -77,7 +82,7 @@ FootnoteReturnLinkContents = "↑"
 
     math = true
     custom_css = ["/css/main.css"]
-    custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js"]
+    custom_js = ["/js/lazysizes.min.js", "/js/flying-pages.min.js", "/js/custom.js", "/js/fuse.min.js", "/js/fastsearch.js"]
 
      # AMP 相关
      amp = true
